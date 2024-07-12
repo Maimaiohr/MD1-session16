@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list"></ul>
+    <script>
+        var names = [
+            "Nguyễn Văn A", "Nguyễn Văn B", "Nguyễn Văn C"
+        ]
+        var get = document.getElementById("list");
+        var to = "";
+        for (var i = 0; i < names.length; i++) {
+            to += `<li>${names[i]}</li>`
+        }
+        document.getElementById("list").innerHTML = to;
+    </script>
+</body>
+
+</html>
